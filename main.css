@@ -1,0 +1,214 @@
+/* reset margin and padding */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* utility */
+html {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	margin-inline: auto;
+}
+button,
+img {
+	display: block;
+}
+button {
+	cursor: pointer;
+}
+img {
+	max-width: 100%;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+label {
+	display: block;
+}
+
+/* navbar */
+.navbar {
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 62px;
+	background-color: red;
+	overflow: hidden;
+}
+.navbar .nav-logo {
+	margin-top: -41px;
+	width: 150px;
+	height: 50px;
+}
+.navbar .add-btn {
+	margin-top: 8px;
+	margin-right: 20px;
+	background-color: transparent;
+	color: white;
+	font-size: 2.5rem;
+}
+.navbar .nav-back {
+	margin: auto 0;
+	margin-right: 20px;
+	font-size: 1.5rem;
+	color: white;
+}
+.navbar .tambah-text {
+	margin: auto 0;
+	margin-left: 20px;
+	font-size: 1.5rem;
+	color: white;
+}
+
+/* content */
+.grid-container {
+	padding-top: 77px;
+	width: 90%;
+	margin-inline: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
+.pokemon {
+	padding: 0.7rem;
+	border: 1px solid gray;
+	border-radius: 1rem;
+	box-shadow: 0px 0px 1px 1px gray;
+	cursor: pointer;
+}
+.pokemon .pokemon-body {
+	display: flex;
+	flex-direction: column;
+
+	margin: 1rem;
+	margin-bottom: 0;
+}
+.pokemon .pokemon-body .pokemon-link {
+	margin: 10px auto;
+	font-weight: 800;
+	color: red;
+}
+.types {
+	display: flex;
+	justify-content: center;
+}
+.types .type-list {
+	margin-inline: 7px;
+	padding: 7px;
+	color: white;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	background-color: lime;
+	border-radius: 4px;
+}
+
+/* Add Pokemon */
+.flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 90%;
+	margin: auto;
+	padding-top: 77px;
+}
+.flex .ubah-image {
+	width: 170px;
+	margin: 20px auto;
+}
+.flex .ubah-image-link {
+	margin: 10px auto;
+	color: red;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.form {
+	margin: 10px 0;
+	padding: 20px 10px;
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+.form-title {
+	color: red;
+}
+.form > label {
+	margin: 10px 0;
+	color: gray;
+}
+.form > input,
+select,
+button {
+	width: 100%;
+	padding: 5px 9px;
+	border: none;
+	outline: none;
+	background-color: #fff8f8;
+}
+
+.form > h3 {
+	font-size: 1.2rem;
+	color: red;
+}
+.form > button {
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 7px;
+	color: white;
+	background-color: red;
+}
+
+/* footer */
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	background-color: white;
+	box-shadow: 0px 0px 8px 1px grey;
+}
+.footer .batal,
+.footer .tambah {
+	margin: 15px;
+	padding: 10px;
+	border-radius: 7px;
+	font-weight: 600;
+}
+.footer .batal {
+	color: red;
+	border: 1px solid red;
+}
+.footer .tambah {
+	color: white;
+	background-color: red;
+}
+
+/* detail pokemon */
+.form .types {
+	justify-content: start;
+	flex-wrap: wrap;
+}
+.form .types .type-list {
+	margin: 5px;
+}
+.form .infoResistant > li {
+	color: white;
+	background-color: black;
+}

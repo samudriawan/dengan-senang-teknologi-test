@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pokemon</title>
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <main>
+    <!-- navbar -->
+    <header>
+      <nav class="navbar">
+        <p class="tambah-text">Tambah Baru</p>
+        <a class="nav-back" href="index.html">X</a>
+      </nav>
+    </header>
+
+    <!-- content -->
+    <div class="flex">
+      <img src="images/pokemon1.png" alt="ubah-image" class="ubah-image">
+      <a href="#" class="ubah-image-link">Ubah Image</a>
+
+      <form class="form">
+        <h3 class="form-title">Informasi Umum</h3>
+
+        <label for="number">Nomor</label>
+        <span class="number" id="number">#016</span>
+
+        <label for="nama">Nama</label>
+        <input type="text" name="nama" id="nama" value="Pidgey">
+
+
+        <label for="types">Types</label>
+        <select name="types" id="types">
+          <option value="grass">Grass</option>
+          <option value="poison">Poison</option>
+          <option value="flying">Flying</option>
+        </select>
+
+        <label for="category">Classification</label>
+        <select name="category" id="category">
+          <option value="seed">Seed Pokemon</option>
+        </select>
+
+        <label for="resistant">Resistant</label>
+        <select name="resistant" id="resistant">
+          <option value="water">Water</option>
+          <option value="electric">Electric</option>
+          <option value="grass">Grass</option>
+          <option value="fighting">Fighting</option>
+          <option value="fairy">Fairy</option>
+        </select>
+      </form>
+
+      <div class="form">
+        <h3>Evolution</h3>
+        <button class="btn-tambah" id="addBtn">+ Tambah</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <button class="batal">Batal</button>
+    <button class="tambah">Tambah</button>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
